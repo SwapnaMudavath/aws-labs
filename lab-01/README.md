@@ -4,4 +4,5 @@
 
 
 ## Goal
-The goal of this lab is to launch a single EC2 instance in a public subnet accessible over the Internet via SSH.
+This lab's objective is to deploy a single EC2 instance on a public subnet that can be accessed remotely using Secure Shell (SSH) from anywhere in the world.[Here](../images/EC2.png) is a mind map of EC2.
+
