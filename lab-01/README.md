@@ -4,5 +4,7 @@
 
 
 ## Goal
-This lab's objective is to deploy a single EC2 instance on a public subnet that can be accessed remotely using Secure Shell (SSH) from anywhere in the world.[Here](../images/EC2.png) is a mind map of EC2.
+This lab's objective is to deploy a single EC2 instance on a public subnet that can be accessed remotely using Secure Shell (SSH) from anywhere in the world. [Here](../images/EC2.png) is a mind map of EC2.
 
+## Architecture Diagram
+![lab-01-arch-01](images/lab-01-arch-01.png)
