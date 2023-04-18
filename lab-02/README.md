@@ -256,3 +256,140 @@ f. And open
 8. You now have full administrative access to this server
 
 9. Now we can exit
+
+Steps – Stop and Start
+1. Let’s now understand how the Public IP address is assigned
+
+2. Let me copy and paste public and private IP to a text file
+
+3. Now, we are going to stop the server
+
+![lab-02-scrn-11](images/lab-02-scrn-11.png)
+
+4. From Instance State Menu, choose Stop Instance
+
+5. Wait until the Instance state changes to Stopped
+
+6. Now, if you look at the instance details
+
+a. Public IP is missing
+
+![lab-02-scrn-12](images/lab-02-scrn-12.png)
+
+b. Private IP is still the same
+
+c. When you stop an EC2 instance, the public IP is automatically released. Whereas Private IP stays with the Instance
+
+7. Let’s start the Instance again
+
+a. Instance state Menu and Start instance
+
+b. Wait until Instance is running
+
+8. A new public IP is assigned to the Instance
+
+9. To Login to the server from your laptop, you now need to use this new IP
+
+10. Launch Putty
+
+11. Load the session
+
+a. Change Host Name to use the new IP address
+
+b. Save
+
+c. Open
+
+12. So, this is an important point to remember. Anytime you stop the EC2 Instance and start it, the Instance Public IP will change
+
+a. Exit from terminal
+
+## Steps – Elastic IP
+
+1. Let’s now look at Elastic IP
+
+2. Elastic IP is a static public IP address
+
+3. From EC2 Console left navigation pane, scroll down and select Elastic IPs
+
+4. Choose Allocate Elastic IP Address
+
+![lab-02-scrn-13](images/lab-02-scrn-13.png)
+
+5. Use default settings and Allocate
+
+![lab-02-scrn-14](images/lab-02-scrn-14.png)
+
+6. An Elastic IP is now assigned to your account from Amazon’s pool
+
+7. This IP address is yours until you release it
+
+8. Let’s associate this IP address to our Instance
+
+9. From Actions, select Associate Elastic IP address
+
+![lab-02-scrn-15](images/lab-02-scrn-15.png)
+
+10. For Resource type, select Instance
+
+11. And choose the Linux Server in the instance text box
+
+12. Associate
+
+![lab-02-scrn-16](images/lab-02-scrn-16.png)
+
+13. Now go back to the instance detail page and refresh the page
+
+14. If you look at the Elastic IP address, our Instance now has the Elastic IP assigned, and this IP address is also shown under public IP
+
+![lab-02-scrn-17](images/lab-02-scrn-17.png)
+
+15. We can now connect to the server using this Elastic IP
+
+a. Login
+
+b. Exit
+
+16. Now let’s see what will happen if we stop the Instance
+
+a. From Instance State, Stop Instance
+
+b. The Instance is stopped now
+
+c. If you look at the details, Public IP and Elastic IP is still assigned
+
+![lab-02-scrn-18](images/lab-02-scrn-18.png)
+
+d. The Elastic IP stays with the Instance until we explicitly disassociate or terminate the Instance
+
+![lab-02-scrn-19](images/lab-02-scrn-19.png)
+
+## Steps – Cleanup
+
+1. To Cleanup, let’s terminate the Instance
+
+![lab-02-scrn-21](images/lab-02-scrn-21.png)
+
+a. From instance state, choose Terminate instance
+
+b. Wait until the instance state changes to Terminated
+
+2. Go to the Elastic IPs page
+
+a. Select the Elastic IP
+
+b. From Actions, choose Release Elastic IP Address
+
+![lab-02-scrn-20](images/lab-02-scrn-20.png)
+
+c. If the Release Elastic IP address option is disabled or if you see an error that it is currently associated, wait for a minute and refresh the page, and try again
+
+3. To avoid unnecessary charges, ensure you terminate the Instance and release the elastic IP
+
+![lab-02-scrn-22](images/lab-02-scrn-22.png)
+
+## Summary
+
+In this lab, we launched an EC2 instance and connected using Putty
+
+We also observed the behavior of Public IP and Elastic IP addresses
