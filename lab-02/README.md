@@ -61,7 +61,7 @@ c. Private Key Format: Choose PPK format if you use a windows laptop. This forma
 
 d. I will select PPK format as I primarily work on Windows Laptop
 
-![lab-02-scrn-04](images/lab-02-scrn-04.png)
+![lab-02-scrn-03a](images/lab-02-scrn-03a.png)
 
 e. Using Putty tool, it is also possible to convert one format to another https://aws.amazon.com/premiumsupport/knowledge-center/ec2-ppk-pem-conversion/
 
