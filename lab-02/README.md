@@ -63,6 +63,7 @@ d. I will select PPK format as I primarily work on Windows Laptop
 
 ![lab-02-scrn-03](images/lab-02-scrn-03.png)
 
+
 e. Using Putty tool, it is also possible to convert one format to another https://aws.amazon.com/premiumsupport/knowledge-center/ec2-ppk-pem-conversion/
 
 11. Create Keypair
