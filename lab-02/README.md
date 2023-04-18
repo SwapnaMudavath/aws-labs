@@ -29,9 +29,9 @@ And when you log in, we need to present the matching private key and EC2 logs
 
 5. Select Key Pairs from the left navigation pane
 
-![lab-02-scrn-00](images/lab-02-scrn-01)
+![lab-02-scrn-01](images/lab-02-scrn-01)
 
-![lab-02-scrn-00](images/lab-02-scrn-02)
+![lab-02-scrn-02](images/lab-02-scrn-02)
 
 
 
