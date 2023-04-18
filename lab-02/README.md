@@ -159,3 +159,24 @@ a. Go to the next page
 12. Launch the Instance
 
 ![lab-02-scrn-06](images/lab-02-scrn-06.png)
+
+13. Click on Instances
+
+14. We can see our LinuxServer and wait until the instance state changes to Running
+
+15. Click on the Instances Id link to open the detail page
+
+16. And we can see the details
+
+a. This server has a public IP address assigned
+
+b. And it also has a private IP address
+
+c. Scroll down and view the Security tab
+
+d. We can see that under security group inbound rules, SSH Access is allowed on port 22 from anywhere
+
+e. Let’s copy the public IP (scroll up)
+
+![lab-02-scrn-07](images/lab-02-scrn-07.png)
+
