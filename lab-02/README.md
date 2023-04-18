@@ -116,3 +116,43 @@ Steps to launch
 a. Choose Amazon Linux AMI
 
 b. From AMI drop down: Select Amazon Linux 2
+
+8. For instance type, use t2.micro or t3.micro – these are free-tier eligible instances. If you don’t see t2.micro, simply choose t3.micro
+
+9. Key pair: Now, we need to specify the Keypair that can Login to the machine
+
+a. If you don’t specify a keypair, you will not be able to Login to the machine
+
+b. So, choose the Keypair that we created earlier
+
+10. Network settings: we can provide VPC information
+
+a. Edit
+
+b. VPC: Select default VPC
+
+c. Subnet: let’s pick the subnet in Availability Zone 2A (scroll the list and find the Availability Zone ending with 2A)
+
+d. Auto-assign Public IP: Enable
+
+e. Let’s create a new Security Group – we are going to allow SSH access so that we can log in to the machine
+
+f. Security group name: SSHAccess
+
+g. Type: SSH
+
+h. Protocol: TCP
+
+i. Port: 22
+
+j. Source type: Select Anywhere. All 0s mean any IPv4 address. The ::/0 refers to any IPv6 address. So, anyone can connect to the SSH port.
+
+k. Usually, you would want to limit SSH access to a specific IP address. For example, I can limit access only from my IP address. For this lab, let’s use it anywhere
+
+11. For storage, we will use the default storage of 8GB
+
+a. Go to the next page
+
+12. Launch the Instance
+
+![lab-02-scrn-05](images/lab-02-scrn-05.png)
