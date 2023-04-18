@@ -117,6 +117,9 @@ a. Choose Amazon Linux AMI
 
 b. From AMI drop down: Select Amazon Linux 2
 
+
+![lab-02-scrn-05](images/lab-02-scrn-05.png)
+
 8. For instance type, use t2.micro or t3.micro – these are free-tier eligible instances. If you don’t see t2.micro, simply choose t3.micro
 
 9. Key pair: Now, we need to specify the Keypair that can Login to the machine
@@ -155,4 +158,4 @@ a. Go to the next page
 
 12. Launch the Instance
 
-![lab-02-scrn-05](images/lab-02-scrn-05.png)
+![lab-02-scrn-06](images/lab-02-scrn-06.png)
