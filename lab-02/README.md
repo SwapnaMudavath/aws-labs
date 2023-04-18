@@ -174,9 +174,85 @@ b. And it also has a private IP address
 
 c. Scroll down and view the Security tab
 
+![lab-02-scrn-07](images/lab-02-scrn-07.png)
+
 d. We can see that under security group inbound rules, SSH Access is allowed on port 22 from anywhere
 
 e. Let’s copy the public IP (scroll up)
 
-![lab-02-scrn-07](images/lab-02-scrn-07.png)
+![lab-02-scrn-08](images/lab-02-scrn-08.png)
 
+Steps to Login
+1. Now, we are going to Login into the server
+
+2. How you Login depends on your laptop Operating system
+
+3. If you are using Mac or Linux, click on Connect button to see the instructions. You can also watch the next video Lab - Connect to your EC2 Linux from Mac
+
+4. Go to the SSH Client tab
+
+a. If you are using Mac or Linux client, you need to open the terminal and run these commands
+
+b. You need to run the chmod command to ensure your key is not publicly visible
+
+c. Now you can connect using SSH. You can copy and paste the command
+
+5. I will show you how to connect from Windows using Putty
+
+a. Copy the server’s public IP address
+
+b. Launch Putty
+
+c. In the Host Name or IP Address, paste the public IP
+
+d. We need to specify the username. Amazon Linux default user name is ec2-user
+
+e. We can specify both username and IP address using this convention ec2-user@publicIP
+
+f. Now, we need to configure the key file to use
+
+g. Expand SSH in the left navigation pane
+
+h. Select Auth
+
+i. In the Private key file for authentication, we need to browse to the keypair file [C:\AWSTraining\Labs]
+
+![lab-02-scrn-09](images/lab-02-scrn-09.png)
+
+j. And Open
+
+k. Now you can save all these configurations
+
+l. Go to Session
+
+m. In the Saved Sessions text box, provide a name. I use the region name – OregonServer
+
+n. And click Save
+
+o. Now, we can click on the saved configuration and load it when needed
+
+p. To connect to the server, click Open
+
+q. And we are connected to the server
+
+6. Let me adjust the font size – exit the server
+
+a. Start Putty again
+
+b. Load the saved session
+
+c. Select Appearance
+
+d. Change Font – I am going to use a 16 size
+
+e. Go back to the session and save it again
+
+f. And open
+
+![lab-02-scrn-10](images/lab-02-scrn-10.png)
+
+7. And it is much better
+
+8. You now have full administrative access to this server
+
+9. Now we can exit
